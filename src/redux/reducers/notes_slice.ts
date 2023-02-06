@@ -16,7 +16,6 @@ const notesSlice = createSlice({
   initialState,
   reducers: {
     saveNote(state: StateProps, action: PayloadAction<Props>) {
-      console.log(action.payload)
       state.notes.push(action.payload);
     },
     deleteNote(state: StateProps, action: PayloadAction<string>) {
